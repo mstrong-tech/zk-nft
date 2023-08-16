@@ -1,0 +1,20 @@
+{
+  "name": "@nft-zk/root",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "yarn@3.2.3",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "react": "yarn workspace @nft-zk/react_app start",
+    "reactBuild": "yarn workspace @nft-zk/react_app build",
+    "localnode": "yarn workspace @nft-zk/contracts localnode",
+    "deployLocalhost": "yarn workspace @nft-zk/contracts deployLocalhost",
+    "deployGoerli": "yarn workspace @nft-zk/contracts deployGoerli"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  }
+}
